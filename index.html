@@ -4,192 +4,374 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Netflix Clone</title>
-    <link rel="stylesheet" href="style.css">
-    <link rel="icon" href="NetflixCloneImages/Netflix-Icon.png">
-    <style>
-        .header{
-            background-image: url('NetflixCloneImages/netflix-reuse-official.jpg');
-        }
-        
-    </style>
-<!--Google fonts-->
-<link rel="preconnect" href="https://fonts.googleapis.com">
-<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-<link href="https://fonts.googleapis.com/css2?family=Roboto&display=swap" rel="stylesheet"> 
+    
+    <!-- Google font icons copied for using css fonts-->
+    <link href="https://fonts.googleapis.com/icon?family=Material+Icons"
+      rel="stylesheet">
+      <link rel="stylesheet" href="style.css">
+      <link rel="icon" href="LinkedIn clone images/LinkedIn icon.png">
 
+
+    <title>LinkedIn Clone</title>
 </head>
 <body>
-    <!--Header with Netflix logo and signup-->
-    <div class="header">
-        <div class="header_top">
-            <div class="header_topleft">
-                <img src="NetflixCloneImages/Netflix-Logo.png" alt="">
+    
+    <!-- Header of LinkedIn clone starts-->
+    <!--Single Header is divided into two for search bar and icons using divs-->
+    <div class="Header_LinkedIn">
+        <div class="Header_Left">
+            <img src="LinkedIn clone images/LinkedIn icon.png" alt=""> <!--Icon image-->
+            <div class="Header_Search_Button"> <!--Search button in Header-->
+                <i class="material-icons"> search </i>
+                <input type="text" placeholder="Search">  <!-- The search bar-->
             </div>
-            <div class="header_topright">
-                <div>
-                <button class="btn_english1">English  </button>  <!--Black button-->
+        </div>
+
+        <div class="Header_Right">
+            <div class="Header_Icons">
+                <i class="material-icons Header_Icons_Target"> home </i> <!--Home icon-->
+                <h4>Home</h4>
+            </div>
+            <div class="Header_Icons">
+                <i class="material-icons Header_Icons_Target"> supervisor_account </i> <!--Friends icon-->
+                <h4>My Network</h4>
+            </div>
+            <div class="Header_Icons">
+                <i class="material-icons Header_Icons_Target"> business_center </i> <!--Jobs icon-->
+                <h4>Jobs</h4>
+            </div>
+            <div class="Header_Icons">
+                <i class="material-icons Header_Icons_Target"> chat </i> <!--Message icon-->
+                <h4>Messaging</h4>
+            </div>
+            <div class="Header_Icons">
+                <i class="material-icons Header_Icons_Target"> notifications </i> <!--Notification icon-->
+                <h4>Notification</h4>
+            </div>
+            <div class="Header_Icons">
+                <i class="material-icons Header_Icons_Target"> account_circle </i> <!--Me icon-->
+                <h4>Me</h4>
+            </div>
+
+        </div>
+
+    </div>
+
+    <!--Header of LinkedIn clone ends-->
+
+    <!--Main Body Starts-->
+    <div class="Main_Body">
+        <!--Left Sidebar Starts-->
+        <div class="Left_Sidebar">     
+            <div class="Sidebar_Top">         <!--Left side bar top-->
+                <img src="LinkedIn clone images/Cover.jpg" alt="">
+                <i class="material-icons Left_Sidebar_Topavatar"> account_circle </i>
+                <h3>Rijas P B</h3>
+                <h4>rijas@gmail.com</h4>
+            </div>
+
+            <div class="Sidebar_Stats">     <!--Left side middle bar-->
+                <div class="Sidebar_Stat">
+                    <p>Who viewed you</p>
+                    <p class="Sidebar_stat_number">
+                        3,455
+                    </p>
+                </div>            
+                <div class="Sidebar_Stat">
+                    <p>Views on post</p>
+                    <p class="Sidebar_stat_number">
+                        655
+                    </p>
                 </div>
-                <div>     <!--Red Button-->
-                <button class="btn_signin">Sign In</button>
+            </div>
+
+            <div class="Sidebar_Bottom">   <!--Left side bottom bar-->
+                <p>Recent</p>
+                <div class="Sidebar_recentitem">
+                    <span class="Sidebar_hash">#</span>
+                    <p>Software Engineering</p>
+                </div>
+                <div class="Sidebar_recentitem">
+                    <span class="Sidebar_hash">#</span>
+                    <p>Python</p>
+                </div>
+                <div class="Sidebar_recentitem">
+                    <span class="Sidebar_hash">#</span>
+                    <p>reactjs</p>
+                </div>
+                <div class="Sidebar_recentitem">
+                    <span class="Sidebar_hash">#</span>
+                    <p>Data science</p>
+                </div>
+            </div>
+            
+
+        </div>
+        <!--Left Sidebar Ends-->
+
+        <!--Feed starts-->
+        <div class="feed">
+            <div class="feed_inputContainer">
+                <div class="feed_input">
+                    <i class="material-icons"> edit </i>
+                    <form>
+                        <input type="text" placeholder="Start a post">
+                        
+                    </form>
+                </div>
+                <div class="feed_inputOption">
+                    <div class="inputOption">
+                        <i style="color: #70b5f9;" class="material-icons"> image </i>
+                        <h4>Photo</h4>
+                    </div>
+                    <div class="inputOption">
+                        <i style="color: #e7a33e;" class="material-icons"> smart_display </i>
+                        <h4>Video</h4>
+                    </div>
+                    <div class="inputOption">
+                        <i style="color: #c0cbcd;" class="material-icons"> event </i>
+                        <h4>Event</h4>
+                    </div>
+                    <div class="inputOption">
+                        <i style="color: #7fc15e;" class="material-icons"> calendar_view_day </i>
+                        <h4>Write article</h4>
+                    </div>
+            
+                </div>           
+                                    
+            </div>
+
+            <!--Post starts-->
+            <div class="post">
+                <div class="post_header">
+                    <i class="material-icons Left_Sidebar_Topavatar"> account_circle </i>
+                    <div class="post_info">
+                        <h3>Rijas P B</h3>
+                        <p>Job Description</p>
+                    </div>
+                </div>
+                <div class="post_body">
+                    <p>Message Here</p>
+                </div>
+                <div class="feed_inputOption">
+                    <div class="inputOption">
+                        <i style="color: gray;" class="material-icons"> thumb_up </i>
+                        <h4>Like</h4>
+                    </div>
+                    <div class="inputOption">
+                        <i style="color: gray;" class="material-icons"> comment </i>
+                        <h4>Comment</h4>
+                    </div>
+                    <div class="inputOption">
+                        <i style="color: gray;" class="material-icons"> share </i>
+                        <h4>Share</h4>
+                    </div>
+                    <div class="inputOption">
+                        <i style="color: gray;" class="material-icons"> send </i>
+                        <h4>Send</h4>
+                    </div>
+
+
+
                 </div>
 
             </div>
-        </div>
-        <div class="header_middle">
-            <div class="header_headings">
-                <h2>Unlimited movies, TV <br> and more.</h2>
-                <h4>Watch anywhere. Cancel anytime.</h4>
-                <p>Ready to watch? Enter your email to create or restart your membership.</p>
+            <!--Post Ends-->      
+            
+            <!--Post starts-->
+            <div class="post">
+                <div class="post_header">
+                    <i class="material-icons Left_Sidebar_Topavatar"> account_circle </i>
+                    <div class="post_info">
+                        <h3>Rijas P B</h3>
+                        <p>Job Description</p>
+                    </div>
+                </div>
+                <div class="post_body">
+                    <p>Message Here</p>
+                </div>
+                <div class="feed_inputOption">
+                    <div class="inputOption">
+                        <i style="color: gray;" class="material-icons"> thumb_up </i>
+                        <h4>Like</h4>
+                    </div>
+                    <div class="inputOption">
+                        <i style="color: gray;" class="material-icons"> comment </i>
+                        <h4>Comment</h4>
+                    </div>
+                    <div class="inputOption">
+                        <i style="color: gray;" class="material-icons"> share </i>
+                        <h4>Share</h4>
+                    </div>
+                    <div class="inputOption">
+                        <i style="color: gray;" class="material-icons"> send </i>
+                        <h4>Send</h4>
+                    </div>
+
+
+
+                </div>
+
             </div>
-            <div class="header_input">
-                <input type="text" placeholder="Email address">
-                <button class="button">Get Started ></button> <!--Red Button 2-->
+            <!--Post Ends--> 
+
+
+            <!--Post starts-->
+            <div class="post">
+                <div class="post_header">
+                    <i class="material-icons Left_Sidebar_Topavatar"> account_circle </i>
+                    <div class="post_info">
+                        <h3>Rijas P B</h3>
+                        <p>Job Description</p>
+                    </div>
+                </div>
+                <div class="post_body">
+                    <p>Message Here</p>
+                </div>
+                <div class="feed_inputOption">
+                    <div class="inputOption">
+                        <i style="color: gray;" class="material-icons"> thumb_up </i>
+                        <h4>Like</h4>
+                    </div>
+                    <div class="inputOption">
+                        <i style="color: gray;" class="material-icons"> comment </i>
+                        <h4>Comment</h4>
+                    </div>
+                    <div class="inputOption">
+                        <i style="color: gray;" class="material-icons"> share </i>
+                        <h4>Share</h4>
+                    </div>
+                    <div class="inputOption">
+                        <i style="color: gray;" class="material-icons"> send </i>
+                        <h4>Send</h4>
+                    </div>
+
+
+
+                </div>
+
             </div>
+            <!--Post Ends--> 
+
+
+            <!--Post starts-->
+            <div class="post">
+                <div class="post_header">
+                    <i class="material-icons Left_Sidebar_Topavatar"> account_circle </i>
+                    <div class="post_info">
+                        <h3>Rijas P B</h3>
+                        <p>Job Description</p>
+                    </div>
+                </div>
+                <div class="post_body">
+                    <p>Message Here</p>
+                </div>
+                <div class="feed_inputOption">
+                    <div class="inputOption">
+                        <i style="color: gray;" class="material-icons"> thumb_up </i>
+                        <h4>Like</h4>
+                    </div>
+                    <div class="inputOption">
+                        <i style="color: gray;" class="material-icons"> comment </i>
+                        <h4>Comment</h4>
+                    </div>
+                    <div class="inputOption">
+                        <i style="color: gray;" class="material-icons"> share </i>
+                        <h4>Share</h4>
+                    </div>
+                    <div class="inputOption">
+                        <i style="color: gray;" class="material-icons"> send </i>
+                        <h4>Send</h4>
+                    </div>
+
+
+
+                </div>
+
+            </div>
+            <!--Post Ends--> 
+
+
+            <!--Post starts-->
+            <div class="post">
+                <div class="post_header">
+                    <i class="material-icons Left_Sidebar_Topavatar"> account_circle </i>
+                    <div class="post_info">
+                        <h3>Rijas P B</h3>
+                        <p>Job Description</p>
+                    </div>
+                </div>
+                <div class="post_body">
+                    <p>Message Here</p>
+                </div>
+                <div class="feed_inputOption">
+                    <div class="inputOption">
+                        <i style="color: gray;" class="material-icons"> thumb_up </i>
+                        <h4>Like</h4>
+                    </div>
+                    <div class="inputOption">
+                        <i style="color: gray;" class="material-icons"> comment </i>
+                        <h4>Comment</h4>
+                    </div>
+                    <div class="inputOption">
+                        <i style="color: gray;" class="material-icons"> share </i>
+                        <h4>Share</h4>
+                    </div>
+                    <div class="inputOption">
+                        <i style="color: gray;" class="material-icons"> send </i>
+                        <h4>Send</h4>
+                    </div>
+
+
+
+                </div>
+
+            </div>
+            <!--Post Ends--> 
 
         </div>
+        <!--Feed ends-->
+
+        <!--Widgets Start-->
+        <div class="widgets">
+            <div class="widgets_header">
+                <h3>LinkedIn Clone</h3>
+                <i class="material-icons"> info </i>
+            </div>
+            <div class="widgets_article">
+                <div class="widget_articleleft">
+                    <i class="material-icons"> fiber_manual_record </i>
+                </div>
+                <div class="widgets_articleright">
+                    <h4>Coding LinkedIn clone</h4>
+                    <p>Top News - Bill Gates</p>
+                 </div>
+            </div>
+
+            <div class="widgets_article">
+                <div class="widget_articleleft">
+                    <i class="material-icons"> fiber_manual_record </i>
+                </div>
+                <div class="widgets_articleright">
+                    <h4>Coding LinkedIn clone</h4>
+                    <p>Top News - Bill Gates</p>
+                 </div>
+            </div>
+
+            <div class="widgets_article">
+                <div class="widget_articleleft">
+                    <i class="material-icons"> fiber_manual_record </i>
+                </div>
+                <div class="widgets_articleright">
+                    <h4>Coding LinkedIn clone</h4>
+                    <p>Top News - Bill Gates</p>
+                 </div>
+            </div>
+        </div>
+        <!--Widgets Ends-->
+
     </div>
-     <!--Header Ends-->
-     <!--Body 1 Begins-->
-    <div class="body_begining">
-        <div class="body_writings">
-            <h2>Enjoy on your TV.</h2>
-            <h4>Watch on smart TVs, PlayStation, Xbox,<br> Chromecast, Apple TV, Blu-ray players and<br> more.</h4>
-        </div>
-        <div class="body_beginimage">
-            <img src="NetflixCloneImages/tv.png" alt="">
-        </div>
-    </div>
-    <!--Body 1 ends-->
-
-    <!--Body 2 begins-->
-    <div class="body_2begining">
-        <div class="body_2beginimage">
-            <img src="NetflixCloneImages/Stranger Things.jpg" alt="">
-        </div>
-        <div class="body_2writings">
-            <h2>Download your shows <br>to watch offline.</h2>
-            <h4>Save your favourites easily and always have<br> something to watch.</h4>
-        </div>
-        
-    </div>
-    <!--Body 2 ends-->
-    <!--Body 3 begins-->
-    <div class="body_3begining">
-        <div class="body_3writings">
-            <h2>Watch everywhere.</h2>
-            <h4>Stream unlimited movies and TV shows on<br> your phone, tablet, laptop, and TV.</h4>
-        </div>
-        <div class="body_3beginimage">
-            <img src="NetflixCloneImages/device-pile-in.png" alt="">
-        </div>
-    </div>
-    <!--Body 3 ends-->
-    <!--Body 4 begins-->
-    <div class="body_4begining">
-        <div class="body_4beginimage">
-            <img src="NetflixCloneImages/AAAABYjXrxZKtrzxQRVQNn2aIByoomnlbXmJ-uBy7du8a5Si3xqIsgerTlwJZG1vMpqer2kvcILy0UJQnjfRUQ5cEr7gQlYqXfxUg7bz.png" alt="">
-        </div>
-        <div class="body_4writings">
-            <h2>Create profiles for<br>children.</h2>
-            <h4>Send children on adventures with their favourite <br>characters in a space made just for them—free <br>with your membership.</h4>
-        </div>
-        
-    </div>
-    <!--Body 4 ends-->
-
-    <!--Body 5 begins-->
-    <div class="FAQ">
-        <div class="h2">
-        <h2>Frequently Asked Questions</h2>
-        </div>
-        <div class="faq_div">
-            <div class="faq_div1">
-                    <button class="faq_b1">What is Netflix?</button>                           
-            </div>
-
-            <div class="faq_div1">
-                <button class="faq_b2">How much does Netflix costs?</button>                              
-            </div>
-
-            <div class="faq_div1">
-                <button class="faq_b3">Where can I watch?</button>                              
-            </div>
-
-            <div class="faq_div1">
-            <button class="faq_b4">How can I cancel?</button>                              
-            </div>
-
-            <div class="faq_div1">
-                <button class="faq_b5">What can I watch on Netflix?</button>                              
-            </div>
-
-            <div class="faq_div1">
-            <button class="faq_b6">Netflix good for kids?</button>                              
-            </div>
-
-
-
-
-
-
-
-
-        </div>
-
-        <div class="faq_p">
-            <p>Ready to watch? Enter your email to create or restart your membership.</p>
-            <input  class="input2" type="email" placeholder="Email address">
-            <button class="button_1">Get Started ></button>  <!--Red button css 3-->
-        </div>
-
-    </div>
-    <!--Body 5 ends-->
-
-    <!-- Footer starts -->
-    <div class="footer">
-        <div class="number">
-            <h4>Questions? Call 000-800-040-1843</h4>
-        </div>
-        <div class="footer_list">
-            <div class="footer_list1">
-                <p>FAQ</p>
-                <p>Investor Relations</p>
-                <p>Privacy</p>
-                <p>Speed Test</p>
-            </div>
-            <div class="footer_list2">
-                <p>Help Centre</p>
-                <p>Jobs</p>
-                <p>Cookie Preferences</p>
-                <p>Legal Notices</p>
-            </div>
-            <div class="footer_list3">
-                <p>Account</p>
-                <p>Ways to Watch</p>
-                <p>Corporate Information</p>
-                <p>Only on Netflix</p>
-            </div>
-            <div class="footer_list4">
-                <p>Media Centre</p>
-                <p>Terms of Use</p>
-                <p>Contact Us</p>
-
-            </div>
-
-        </div>
-        <div class="footer_end">
-
-            <div class="footer_end1">
-                <a href="#" class="btn-english">English</a>
-            </div>
-            <div class="footer_end2">
-            <p>Netflix India</p>
-            </div>
-        </div>
-    </div>
-    <!-- Footer ends -->
-
+    <!--Main Body Ends-->
     
 </body>
 </html>
